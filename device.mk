@@ -24,8 +24,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    miui_prebuilt
+    android.hardware.boot@1.2-impl-qti.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
 
 # FastbootD support
 PRODUCT_PACKAGES += \
