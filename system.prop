@@ -1,0 +1,29 @@
+# Gatekeeper, Encryption
+fbe.metadata.wrappedkey=true
+vendor.gatekeeper.disable_spu=true
+ro.crypto.volume.filenames_mode=aes-256-cts
+keymaster_ver=4.1
+
+# Platform
+ro.display.series=Redmi Note 13 4G
+ro.product.board=sapphiren
+ro.board.platform=bengal
+sys.usb.controller=4e00000.dwc3
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam
+persist.sys.isUsbOtgEnabled=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Virtual A/B
+ro.virtual_ab.enabled=true
+
+# Dynamic Partitions
+ro.boot.dynamic_partitions=true
+
+# Charger suspend 
+ro.charger.enable_suspend=1
+
+# ADB
+ro.adb.secure=0
